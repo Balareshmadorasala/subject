@@ -1,0 +1,362 @@
+/* General Styling */
+.container {
+  max-width: 900px;
+  margin-right: auto;
+  padding: 20px;
+
+}
+
+/* Button Styling */
+.button-wrapper {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.button-wrapper button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Modal Form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+/* Table Styling */
+.table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: auto;  /* Enable horizontal scroll */
+  display: block; /* Makes sure it scrolls */
+
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  table-layout: auto;
+
+ 
+}
+
+
+
+.table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle; 
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+/* Pagination */
+.pagination-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination-button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Modal Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .table thead {
+    font-size: 14px;
+  }
+
+  .table tbody td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .pagination-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+/* Two Column Layout */
+.row {
+  margin-bottom: 15px;
+}
+
+/* Form Fields */
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+
+  /* Label on the left, input on the right */
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 15px;
+
+  }
+
+  .form-group label {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .form-group textarea {
+    resize: none;
+    overflow: hidden;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    flex: 2;
+    width: auto;
+    height: 40px; /* Adjust this value if needed */
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  
+  }
+}
+
+.checkbox-container {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ensure it takes the full width */
+  min-height: 40px; /* Match the height of other input fields */
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+ /* Table remains scrollable in mobile view */
+ .table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+.checkbox-container div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkbox-container label {
+  margin-left: 5px;
+}
+input[type="checkbox"] {
+  width: 20px;  /* Fixed size */
+  height: 20px;
+  appearance: none;  /* Remove default styles */
+  border: 2px solid #000;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  height: 40px !important;
+}
+/* Ensure checkbox tick is visible */
+input[type="checkbox"]:checked {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: 2px solid #007bff;
+  position: relative;
+}
+
+/* Add a custom tick mark */
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;}
+/* Ensure table width fits content */
+.table-wrapper table {
+  width: 100%;
+  min-width: 800px; /* Prevents content from shrinking */
+  table-layout: auto;
+  border-collapse: collapse;
+
+}
+/* Centering text inside table cells, including name (e.g., "Reshma") */
+td {
+  text-align: center;
+  vertical-align: middle; /* Ensures vertical centering */
+}
+
+/* Style for table cells */
+td, th {
+  white-space: nowrap; /* Prevents excessive text stretching */
+  padding: 35px;
+  text-align: center;
+  border: 1px solid #ddd;
+  vertical-align: middle; 
+}
+.description-cell {
+  width: 250px; /* Fixed width */
+  max-width: 250px; 
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.description-text {
+  max-height: 100px; /* Set height limit */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  display: block; /* Ensures scrolling works */
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Keeps formatting */
+  overflow-y: scroll !important;
+  
+  padding: 5px; /* Space around text */
+}
+.modal-header-custom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #007bff;
+}
+
+.modal-header-custom .modal-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
