@@ -1,0 +1,250 @@
+/* Subject Manager Styles */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.table {
+  margin-top: 20px;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #007bff !important;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.add-subject-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-subject-button:hover {
+  background-color: #218838;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+ 
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+.modal-title {
+  text-align: center;
+  width: 100%;
+  color:blue;
+}
+.modal-header {
+
+  color: blue; /* White text for contrast */
+  text-align: center;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-label {
+    font-weight: bold;
+    flex: 1;  /* Allows label to take 30% of space */
+    text-align: left;
+  }
+
+  .form-input {
+    flex: 2; /* Allows input to take 70% of space */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}
+@media (min-width: 769px) {  /* Apply only for desktop */
+  .form-group {
+    margin-bottom: 20px;  /* Adds space between input fields */
+  }
+
+  .form-buttons {
+    margin-top: 30px;  /* Creates space between the last input and buttons */
+  }
+}
+
+/* Center the modal */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Make sure it covers the full viewport */
+}
+
+/* Style form rows */
+.form-row {
+  margin-bottom: 15px;
+}
+
+/* Center the buttons */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Ensure modal width is appropriate */
+.modal-content {
+  width: 400px; /* Adjust width as needed */
+}
+/* Wrap table inside a scrollable div */
+.table-wrapper {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: auto; /* Enables horizontal scrolling */
+
+}
+
+/* Ensure the table header stays fixed */
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: black !important;
+  color: white !important;
+  z-index: 10;
+}
+
+/* Ensure proper table layout */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style table headers */
+.table thead th {
+  text-align: center;
+  padding: 12px;
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Style table rows */
+.table tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Add a border to separate rows */
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}

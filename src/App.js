@@ -1,11 +1,12 @@
 import React from "react";
-import Schedule from "./component/Schedule";
+import Subject from "./components/Subject";
+
 
 
 function App() {
   return (
     <div>
-      <Schedule />
+      <Subject />
     </div>
   );
 }
