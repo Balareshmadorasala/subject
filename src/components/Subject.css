@@ -5,28 +5,7 @@
   padding: 20px;
 }
 
-.table {
-  margin-top: 20px;
-  text-align: left;
-}
 
-th, td {
-  padding: 10px;
-  text-align: center;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  margin: 5px;
-}
 
 .pagination-wrapper {
   display: flex;
